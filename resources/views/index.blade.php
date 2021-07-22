@@ -30,15 +30,15 @@
 
             @foreach ($todos as $todo)
             <tr>
-                <td>{{ $todo->created_at }}</td>
-                <td> <input type="text" name="content" class="sub-form" value="{{ $todo->content }}"></td>
+                <td>{{ $todo->updated_at }}</td>
 
                 <td>
-                    <form action="/todo/update" method="GET">
+                    <form action="/todo/update" method="post">
                         @csrf
-                        <input type="hidden" name="content" value="{{$todo->id}}">
-                        <button type="submit" class="update-btn">更新</button>
-
+                        <input type="text" name="content" class="sub-form" value="{{$todo->content}}">
+                        <input type="hidden" name="id" value="{{$todo->id}}">
+                </td>
+                <td><button type="submit" class="update-btn">更新</button></td>
                     </form>
 
                 <td>
