@@ -1,0 +1,105 @@
+body{
+    background-color: rgb(50, 24, 145);
+}
+
+h1{
+    font-size: 25px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 13px;
+}
+
+p{
+    color: red;
+}
+
+.container{
+    width: 50vw;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20vh;
+    padding:30px;
+}
+
+.main-form{
+    width: 600px;
+    height: 30px;
+    border: 0;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+}
+
+.sub-form{
+    width:200px;
+    height: 25px;
+    border: 0;
+    border: solid 1px #ccc;
+    border-radius: 5%;
+}
+
+.main-form:focus,.sub-form:focus{
+    outline: none;
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    padding: 15px;
+}
+
+td{
+    text-align: center;
+    padding: 10px;
+}
+
+.add-btn{
+    background-color: white;
+    border: 0;
+    border: solid 2px violet;
+    color: violet;
+    padding: 10px 15px;
+    border-radius: 10%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.add-btn:hover{
+    background-color: violet;
+    color: white;
+}
+
+
+.update-btn{
+    background-color: white;
+    border: 0;
+    border: solid 2px orange;
+    color:orange;
+    padding: 10px 15px;
+    border-radius: 10%;
+    cursor: pointer;
+    }
+
+.update-btn:hover{
+    background-color: orange;
+    color: white;
+}
+
+.delete-btn{
+    background-color: white;
+    border: 0;
+    border: solid 2px lightgreen;
+    color:lightgreen;
+    padding: 10px 15px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color:lightgreen;
+    color: white;
+}
